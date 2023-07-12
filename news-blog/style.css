@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+ 
+*{
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1200px;
+  font-family: 'Ubuntu', sans-serif;  
+  background-color: #f3f3f3;
+  padding: 50px;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 20px; 
+  max-width: 1000px;
+}
+
+aside {
+  display: flex;
+  align-self: flex-end;
+}
+
+.container-left {
+  max-width: 300px;
+  padding: 40px;
+  /* margin: 10px; */
+  height: 100%;
+}
+
+.container-right {
+  max-width: 200px;  
+}
+
+.main-header {
+  display: inline;
+  position: relative;  
+}
+
+.blog-icon {
+  position: relative;
+  top: -60px;
+  left: 200px;
+}
+
+h3,
+.followers {
+  white-space: nowrap;
+}
+img {
+  width: 20%;
+} 
+
+.icon {
+  width: 50px;
+  width: 50px;
+  position: relative; 
+}
+
+.icon-bookmark {
+  display:block;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background: url(./icons/bookmark-regular.svg) no-repeat center;
+  filter: invert(25%) sepia(71%) saturate(5079%) hue-rotate(235deg) brightness(83%) contrast(109%);   
+  margin: 15px;    
+}
+
+.icon-bookmark.marked {  
+  background: url(./icons/bookmark-solid.svg) no-repeat center;  
+}
+
+.news-item {
+  display: flex;
+  width: 450px;
+  margin-bottom: 20px;
+}
+
+ .image img {
+  width: 150px;
+  padding: 20px;
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+}
+
+ .links {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+ .links:hover {
+  text-decoration: underline;
+}
+
+.news-item, 
+.container-left,
+.container-bottom{
+  box-shadow: 1px 1px 20px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.container-right{
+  width: 400px;  
+  padding: 20px;   
+}
+
+.container-bottom {
+  margin-top: 20px;
+  padding: 0 10px 10px 10px;
+  max-width: 900px;
+}
+
+.top-bloggers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+}
+
+ .heading-bottom { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;  
+ }
+
+ .profile-img {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 60px;
+ }
+
+ .blogger-profile {
+  display: flex;
+  flex-direction: row;
+ }
+
+ .blogger-item img {
+  float: left;
+  margin-right: 15px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.blogger-item {
+  position: relative;
+}
+
+ .badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+}
+
+ 
